@@ -12,7 +12,7 @@ public class Node {
 
     public Node(int k) {
         data = k;
-        neighbors = new ArrayList();
+        neighbors = new ArrayList<Node>();
     }
 
     /* Getter and setter for data field */

@@ -15,7 +15,7 @@ public class BFS {
      * @param target the target node
      */
     public static int search(Node root, Node target) {
-        Queue<Node> queue = new LinkedList();
+        Queue<Node> queue = new LinkedList<Node>();
         HashSet<Node> visitedNodes = new HashSet<>();
         int step = 0;
         // Initialize

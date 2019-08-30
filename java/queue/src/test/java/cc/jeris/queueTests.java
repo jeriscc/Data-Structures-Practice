@@ -30,7 +30,7 @@ public class queueTests {
     public void standardQueueExample() {
         // Using the standard Java Queue
         // 1. Initialize a queue.
-        Queue<Integer> q = new LinkedList();
+        Queue<Integer> q = new LinkedList<Integer>();
         // 2. Get the first element - return null if queue is empty.
         System.out.println("The first element is: " + q.peek());
         // 3. Push new element.
