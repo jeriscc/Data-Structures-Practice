@@ -11,11 +11,14 @@ package cc.jeris;
  */
 public class NumIslands {
 
-    /*
+    /**
      * Given a 2d grid map of '1's (land) and '0's (water), count the number of
      * islands. An island is surrounded by water and is formed by connecting
      * adjacent lands horizontally or vertically. You may assume all four edges of
      * the grid are all surrounded by water.
+     * 
+     * @param grid grid of land and sea
+     * @return number of islands
      */
     public static int getNum(char[][] grid) {
         int result = 0;
@@ -36,6 +39,12 @@ public class NumIslands {
      * This is the DFS approach to marking. Can also be solved with BFS but there is
      * no time complexity gains from that approach. Also, the code will become more
      * sophisticated and the space complexity will increase.
+     * 
+     * 
+     * @param grid the current land and sea
+     * @param i position
+     * @param j position
+     * Marks island connected to (i,j) as sea
      */
     private static void markIsland(char[][] grid, int i, int j) {
         // Return if pointer is out of bounds or grid content equals '0'

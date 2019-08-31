@@ -13,6 +13,11 @@ import java.util.Queue;
  */
 class OpenLock {
 
+    /**
+     * @param d the deadend strings
+     * @param target the target string
+     * @return min number of "turns" it takes to reach target from "0000"
+     */
     public static int openLock(String[] d, String target) {
         HashSet<String> deadends = new HashSet<>(Arrays.asList(d));
         Queue<String> q = new LinkedList<String>();

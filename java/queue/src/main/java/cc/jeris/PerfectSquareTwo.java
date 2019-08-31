@@ -10,6 +10,10 @@ import java.util.Arrays;
 public class PerfectSquareTwo {
     private int[] sums;
 
+    /**
+     * @param n integer number to calculate on
+     * @return min number of perfect squares that sum to n
+     */
     public int numSquares(int n) {
         if (n <= 0) {
             return 0;

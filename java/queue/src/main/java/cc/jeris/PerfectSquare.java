@@ -20,6 +20,10 @@ class PerfectSquare {
     Queue<Integer> q;
     HashSet<Integer> visited;
 
+    /**
+     * @param n integer number to calculate on
+     * @return min number of perfect squares that sum to n
+     */
     public int numSquares(int n) {
         // Filter out invalid entries
         if (n <= 0) {

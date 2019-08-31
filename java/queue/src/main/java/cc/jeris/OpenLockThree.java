@@ -1,7 +1,5 @@
 package cc.jeris;
 
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -19,6 +17,11 @@ public class OpenLockThree {
     Queue<Integer> q1 = new LinkedList<Integer>();
     Queue<Integer> q2 = new LinkedList<Integer>();
 
+    /**
+     * @param d the deadend strings
+     * @param target the target string
+     * @return min number of "turns" it takes to reach target from "0000"
+     */
     public int openLock(String[] deadends, String target) {
         int t = Integer.parseInt(target);
         for (String d : deadends) {
@@ -49,7 +52,7 @@ public class OpenLockThree {
     }
 
     /**
-     * Swaps the hashsets and queues by reference
+     * Swaps the boolean arrays and queues by reference
      */
     public void swap() {
         boolean[] settmp = q1set;
@@ -60,6 +63,12 @@ public class OpenLockThree {
         q2 = qtmp;
     }
 
+    /**
+     * Adds neighboring, unvisited, and non-deadend numbers to the queue. Marks
+     * those new numbers as visited.
+     * 
+     * @param top number to advance from
+     */
     public void advance(int top) {
         int base = 1;
         while (base < 10000) {

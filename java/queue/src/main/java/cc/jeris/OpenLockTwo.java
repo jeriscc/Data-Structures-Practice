@@ -17,6 +17,11 @@ public class OpenLockTwo {
     private Queue<String> q1 = new LinkedList<String>();
     private Queue<String> q2 = new LinkedList<String>();
 
+    /**
+     * @param d the deadend strings
+     * @param target the target string
+     * @return min number of "turns" it takes to reach target from "0000"
+     */
     public int openLock(String[] d, String target) {
         deadends = new HashSet<>(Arrays.asList(d));
         String start = "0000";
