@@ -4,7 +4,7 @@ package cc.jeris;
  * NumIsland Problem src: https://leetcode.com/problems/number-of-islands/
  * 
  * Space complexity: constant
- * Time complexity: linear
+ * Time complexity: linear 100% and 1ms
  * 
  * Very cool solution:
  * https://leetcode.com/explore/learn/card/queue-stack/231/practical-application-queue/1374/discuss/56349/7-lines-Python-~14-lines-Java

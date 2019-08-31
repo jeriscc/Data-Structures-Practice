@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * OpenLock
+ * OpenLock, src: https://leetcode.com/problems/open-the-lock/
  * Uses one way BFS
  * Speed: 61% and 76ms
  * Memory: 41.6 MB

@@ -5,24 +5,27 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Unit test for my Circular Queue.
+ * Unit test for my Open Lock Problem.
  */
 public class OpenLockTest {
-    /**
-     * Rigorous Test.
-     */
+
     @Test
     public void testOne() {
-        // Testing my Circular Queue
-        String[] deadends = {"0201","0101","0102","1212","2002"};
-        assertTrue(OpenLock.openLock(deadends, "0202") == 6);
+        String[] deadends = { "0201", "0101", "0102", "1212", "2002" };
+        assertTrue("OpenLock ONE should work for basic test", OpenLock.openLock(deadends, "0202") == 6);
     }
 
     @Test
-    public void testTWo() {
-        // Testing my Circular Queue
-        String[] deadends = {"0201","0101","0102","1212","2002"};
+    public void testTwo() {
+        String[] deadends = { "0201", "0101", "0102", "1212", "2002" };
+        OpenLockTwo ol = new OpenLockTwo();
+        assertTrue("OpenLock TWO should work for basic test", ol.openLock(deadends, "0202") == 6);
+    }
+
+    @Test
+    public void testThree() {
+        String[] deadends = { "0201", "0101", "0102", "1212", "2002" };
         OpenLockThree ol = new OpenLockThree();
-        assertTrue(ol.openLock(deadends, "0202") == 6);
+        assertTrue("OpenLock THREE should work for basic test", ol.openLock(deadends, "0202") == 6);
     }
 }
