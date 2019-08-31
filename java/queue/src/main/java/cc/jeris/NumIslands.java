@@ -32,6 +32,11 @@ public class NumIslands {
         return result;
     }
 
+    /**
+     * This is the DFS approach to marking. Can also be solved with BFS but there is
+     * no time complexity gains from that approach. Also, the code will become more
+     * sophisticated and the space complexity will increase.
+     */
     private static void markIsland(char[][] grid, int i, int j) {
         // Return if pointer is out of bounds or grid content equals '0'
         if (i < 0 || i == grid.length || j < 0 || j == grid[i].length || grid[i][j] != '1') {
@@ -44,6 +49,6 @@ public class NumIslands {
         markIsland(grid, i + 1, j);
         markIsland(grid, i - 1, j);
         markIsland(grid, i, j + 1);
-        markIsland(grid, i , j - 1);
+        markIsland(grid, i, j - 1);
     }
 }
