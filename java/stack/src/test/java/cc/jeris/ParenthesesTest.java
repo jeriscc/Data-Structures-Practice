@@ -25,4 +25,9 @@ public class ParenthesesTest {
     public void testThree() {
         assertTrue(v.isValid("()[]{}"));
     }
+
+    @Test
+    public void testFour() {
+        assertFalse(v.isValid("]("));
+    }
 }
