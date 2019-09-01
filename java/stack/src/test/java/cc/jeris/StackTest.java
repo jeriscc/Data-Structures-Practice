@@ -48,4 +48,20 @@ public class StackTest {
         // 6. Get the size of the stack.
         assert(s.size() == 3);
     }
+
+
+    @Test
+    public void testMinStack() {
+        MinStackTwo s = new MinStackTwo();
+        s.push(-2);
+        s.push(0);
+        s.push(-3);
+        assertTrue("Test min", s.getMin() == -3);
+        // 4. Pop an element.
+        s.pop();
+        // 5. Get the top element.
+        assertTrue("Test top", s.top() == 0);
+        // 6. Get the size of the stack.
+        assertTrue("Test min 2", s.getMin() == -2);
+    }
 }
