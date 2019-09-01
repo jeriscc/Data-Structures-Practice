@@ -5,6 +5,8 @@ import java.util.EmptyStackException;
 /**
  * MinStack: first implementation, using math encodings. Breaks for overley
  * large or small inputs
+ * 
+ * Problem Src: https://leetcode.com/problems/min-stack/
  */
 public class MinStack {
 

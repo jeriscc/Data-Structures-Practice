@@ -1,5 +1,8 @@
 package cc.jeris;
 
+/**
+ * Design Circular Queue, src: https://leetcode.com/problems/design-circular-queue/
+ */
 class MyCircularQueue {
     // Array of integers for storing data
     private int data[];

@@ -7,6 +7,8 @@ import java.util.Queue;
 /**
  * This is my most optimed solution for BFS for the Perfect Squares Problem.
  * 
+ * Problem Src: https://leetcode.com/problems/perfect-squares/
+ * 
  * While other solutions used an accumulative approach, I decided to go with a
  * remainder appoach. This shrinks the loop to not run even check for large
  * perfect squares (rather breaking when the square is too large). Because there
