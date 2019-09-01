@@ -1,6 +1,8 @@
 package cc.jeris;
 
+import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Deque;
 import java.util.Stack;
 
 /**
@@ -28,7 +30,7 @@ public class DailyTemperature {
     }
 
     /**
-     * Same as above but "stack" implemented with array list
+     * My stack strategy implemented with array list
      * 
      * Speed: 85% and 14ms
      */
@@ -45,6 +47,30 @@ public class DailyTemperature {
                 a.remove(size - 1);
             } else {
                 a.add(i);
+                i++;
+            }
+        }
+        return result;
+    }
+
+    /**
+     * My stack strategy implemented with ArrayDeque. Comparable perf to ArrayList
+     * but cleaner code.
+     * 
+     * Speed: 87% and 13ms
+     */
+    public int[] dailyTempArrayDeque(int[] T) {
+        Deque<Integer> s = new ArrayDeque<>();
+        int[] result = new int[T.length];
+        s.addFirst(0);
+        int i = 1;
+        while (i < T.length) {
+            int size = s.size();
+            if (size != 0 && T[s.peekFirst()] < T[i]) {
+                int j = s.removeFirst();
+                result[j] = i - j;
+            } else {
+                s.addFirst(i);
                 i++;
             }
         }
