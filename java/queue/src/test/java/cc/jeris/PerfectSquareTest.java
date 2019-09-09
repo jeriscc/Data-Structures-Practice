@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Unit test for the perfect square problem
+ * Test suite for the Perfect Square Problem.
  */
 public class PerfectSquareTest {
 

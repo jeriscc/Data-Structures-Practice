@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 import java.util.Stack;
 
 /**
- * Unit test for simple App.
+ * Test suite for Stack Implementations.
  */
 public class StackTest {
     /**

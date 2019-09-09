@@ -3,7 +3,7 @@ package cc.jeris;
 import java.util.HashSet;
 
 /**
- * DFS
+ * DFS. Note: system's stack should always be considered in space complexity.
  */
 public class DFS {
     HashSet<Node> visited = new HashSet<Node>();

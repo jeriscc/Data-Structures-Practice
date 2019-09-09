@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 import java.util.Arrays;
 
 /**
- * DailyTempTest
+ * Test suite for Daily Temperature problem.
  */
 public class DailyTempTest {
 

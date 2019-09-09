@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * ParenthesesTest
+ * Test suite for Parentheses problem.
  */
 public class ParenthesesTest {
 

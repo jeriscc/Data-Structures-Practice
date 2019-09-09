@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Unit test for the num island problem.
+ * Test suite for the Num Island Problem.
  */
 public class NumIslandTest {
     /**

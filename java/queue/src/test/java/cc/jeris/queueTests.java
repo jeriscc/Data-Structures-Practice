@@ -8,12 +8,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Unit test for my Circular Queue.
+ * Test suite for my Circular Queue.
  */
 public class queueTests {
-    /**
-     * Rigorous Test.
-     */
+
     @Test
     public void testOne() {
         // Testing my Circular Queue

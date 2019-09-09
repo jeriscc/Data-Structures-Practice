@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * DailyTempTest
+ * Test Suite for EvalRPN problem.
  */
 public class EvalRPNTest {
 

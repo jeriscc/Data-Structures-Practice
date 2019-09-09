@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Unit test for my Open Lock Problem.
+ * Test suite for my Open Lock Problem.
  */
 public class OpenLockTest {
 

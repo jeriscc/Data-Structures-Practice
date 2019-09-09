@@ -5,12 +5,10 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Unit test for my Circular Queue.
+ * Test suite for my BFS implementation.
  */
 public class BFSTest {
-    /**
-     * Rigorous Test.
-     */
+
     @Test
     public void testOne() {
         Node begin = new Node(1);
