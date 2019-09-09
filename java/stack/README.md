@@ -16,3 +16,5 @@ So for these problems, the order of preference is: No Array > Fixed sized array 
 
 Deque and its method equivalents with Stack and Queue methods:
 https://docs.oracle.com/javase/7/docs/api/java/util/Deque.html
+
+To set data members with the public constructor function, we can name the function param variables as `_param` rather than `p`.

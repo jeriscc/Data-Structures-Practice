@@ -12,7 +12,7 @@ public class DFS {
         if (start == dest) {
             return true;
         }
-        for (Node n : start.getAdjNodes()) {
+        for (Node n : start.neighbors) {
             if (!visited.contains(n)) {
                 visited.add(n);
                 if (search(n, dest)) {
