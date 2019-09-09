@@ -6,7 +6,9 @@ import java.util.Deque;
 import java.util.Stack;
 
 /**
- * Daily Temperature, src: https://leetcode.com/problems/daily-temperatures/
+ * Daily Temperature. Stack Problem.
+ * 
+ * Problem src: https://leetcode.com/problems/daily-temperatures/
  */
 public class DailyTemperature {
     /**

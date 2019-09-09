@@ -3,13 +3,15 @@ package cc.jeris;
 import java.util.Stack;
 
 /**
- * ValidParentheses. Speed 98.5% and 1ms. O(n) time and space.
+ * ValidParentheses. Stack Problem.
+ * 
+ * Speed 98.5% and 1ms. O(n) time and space.
  * 
  * Problem Src: https://leetcode.com/problems/valid-parentheses/
  * 
  * Take away, not all correspondance verification has to happen via HashMaps,
  * simple boolean logic also works. Also, look for broader boolean simplication
- * across my solutoins.
+ * across my solutions.
  * 
  * My previous convoluted hashmap solution:
  * https://leetcode.com/submissions/detail/256641128/

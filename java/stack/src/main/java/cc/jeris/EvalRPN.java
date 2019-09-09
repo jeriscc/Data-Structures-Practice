@@ -1,7 +1,9 @@
 package cc.jeris;
 
 /**
- * EvalRPN
+ * EvalRPN. Stack Problem.
+ * 
+ * Speed: 98.29% and 3 ms
  * 
  * Implements stack using an array for better efficiency and deeper access to
  * elements. Would use Deque<Integer> stack = new ArrayDeque<>() for other
